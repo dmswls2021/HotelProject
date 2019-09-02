@@ -1,0 +1,26 @@
+.fli{
+	
+}
+
+nav > a {
+	color: white;
+	font-family: '돋움';
+	
+}
+
+.btn-group .button {
+  background-color: skyblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+}
+
+.btn-group .button:hover {
+  background-color: #adc6fe;
+}

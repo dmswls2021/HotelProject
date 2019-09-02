@@ -12,9 +12,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<table>
+<table height="98%" width="98%" border="0">
 	<tr>
-		<td>
+		<td height="50px">
 			<jsp:include page="nav.jsp"></jsp:include>
 		</td>
 	</tr>
