@@ -10,11 +10,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href='css/template.css'/>
 </head>
 <body>
-<table height="98%" width="98%" border="0">
+<table class="temp">
 	<tr>
-		<td height="50px">
+		<td class="nav">
 			<jsp:include page="nav.jsp"></jsp:include>
 		</td>
 	</tr>

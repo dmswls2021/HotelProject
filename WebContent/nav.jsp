@@ -15,8 +15,18 @@
 			  <button class="button">Hotels</button>
 		</div>
 		<div class="btn-group">
-			<button class="user">Button</button>
-			<button class="user" onclick="location.href='join.jsp'">Join</button>
+		<% 
+			if(session.getAttribute("id") == null){
+		%>
+				<button class="user" onclick="location.href='join.jsp'">Join</button>
+				<button class="user" onclick="location.href='login.jsp'">Login</button>
+		<% 
+			} else{
+		%>
+				<button class="user" onclick="location.href='logout.jsp'">Logout</button>
+		<%
+			}
+		%>
 		</div>
 	</div>
 </nav>

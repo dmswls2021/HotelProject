@@ -1,0 +1,10 @@
+.nav {
+	background: skyblue;
+	height: 50px;
+}
+
+.temp {
+	border: none;
+	width: 98%;
+	height: 98%;
+}
