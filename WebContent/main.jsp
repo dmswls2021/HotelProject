@@ -9,7 +9,20 @@
 </head>
 <body>
 <div class="main_banner">
-	<img src="img/main.jpg" class="main_img">
+	<div class="banner_box">
+		<img src="img/main.jpg" class="main_img">
+	</div>
+</div><br><br><br>
+<hr>
+<div class="list">
+	<div class="best">
+		<b><font size="5" color="gray">  인기  </font></b>
+		<hr>
+	</div>
+	<div class="low">
+		<b><font size="5" color="gray">  최저가  </font></b>
+		<hr>
+	</div>
 </div>
 </body>
 </html>

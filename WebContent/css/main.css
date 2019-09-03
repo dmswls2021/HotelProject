@@ -6,3 +6,35 @@
 .main_banner{
 	text-align: center;
 }
+
+.banner_box{
+	max-height: 300px;
+	overflow: hidden;
+}
+
+.banner_box img{
+	max-height: initial;
+	margin-top: -100px;
+}
+
+.list{
+	display: inline;
+}
+
+.list hr{
+	border-width: 0.5px;
+	border-color: gray;
+	border-style: solid;
+}
+
+.best {
+	width: 50%;
+	text-align: center;
+	float: left;
+}
+
+.low{
+	width: 50%;
+	text-align: center;
+	float: right;
+}
