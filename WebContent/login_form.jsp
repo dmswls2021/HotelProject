@@ -19,23 +19,17 @@
             alert("비밀번호를 입력하세요.");
             return false;
         }
-            
-        // 비밀번호와 비밀번호 확인에 입력된 값이 동일한지 확인
-        if(document.userInfo.password.value != document.userInfo.passwordcheck.value ){
-            alert("비밀번호를 동일하게 입력하세요.");
-            return false;
-        }
     }
 </script>
 </head>
 <body>
 	<div id="wrap">
         <br><br>
-        <b><font size="6" color="gray">회원가입</font></b>
+        <b><font size="6" color="gray">로그인</font></b>
         <br><br><br>
         <!-- 입력한 값을 전송하기 위해 form 태그를 사용한다 -->
         <!-- 값(파라미터) 전송은 POST 방식, 전송할 페이지는 join_proc.jsp -->
-        <form method="post" action="join_proc.jsp" name="userInfo" onsubmit="return checkValue()">
+        <form method="post" action="login_proc.jsp" name="userInfo" onsubmit="return checkValue()">
             <table >
                 <tr>
                     <td id="title">아이디</td>
@@ -50,16 +44,9 @@
                         <input type="password" name="password" maxlength="50">
                     </td>
                 </tr>
-                
-                <tr>
-                    <td id="title">비밀번호 확인</td>
-                    <td class="text">
-                        <input type="password" name="passwordcheck" maxlength="50">
-                    </td>
-                </tr>
             </table>
             <br>
-            <input type="submit" value="가입" class="btn"/> &nbsp;&nbsp;&nbsp; <input type="button" value="취소" onclick="location.href='index.jsp'" class="btn">
+            <input type="submit" value="로그인" class="btn"/>
         </form>
     </div>
 </body>

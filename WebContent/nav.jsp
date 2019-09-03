@@ -12,7 +12,7 @@
 	<div>
 		<div class="btn-group">
 			  <button class="button" onclick="location.href='index.jsp'"><strong>SeoulHotel</strong></button>
-			  <button class="button">Hotels</button>
+			  <button class="button" onclick="location.href='hotel.jsp'">Hotels</button>
 		</div>
 		<div class="btn-group">
 		<% 
@@ -24,6 +24,8 @@
 			} else{
 		%>
 				<button class="user" onclick="location.href='logout.jsp'">Logout</button>
+				<button class="user" onclick="location.href='mypage.jsp'">MyPage</button>
+				<div class="nick"><%= session.getAttribute("id") %>님 환영합니다</div>
 		<%
 			}
 		%>

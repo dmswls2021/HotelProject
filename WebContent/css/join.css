@@ -6,15 +6,47 @@
 }
         
 #wrap>table{
-    margin-left:auto; 
-    margin-right:auto;
     border:3px solid skyblue;
 }
         
 #wrap>td{
     border:1px solid skyblue;
 }
+
+#wrqp>tr{
+	padding-left: 150px;
+}
         
 #title{
     background-color:skyblue;
+    width: 200px;
+    height: 30px;
+    color: white;
+}
+
+.text {
+	text-align: center;
+	width: 300px;
+}
+
+.text>input{
+	width: 200px;
+}
+
+.btn{
+	background: #0099ff;
+	border: none;
+	width: 100px;
+	height: 50px;
+	color: white;
+	margin-top: 70px;
+}
+
+.btn:hover{
+	background: #0066dd;
+	border: none;
+	width: 100px;
+	height: 50px;
+	color: white;
+	margin-top: 70px;
 }
