@@ -1,0 +1,32 @@
+.list{
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+}
+
+.box{
+	margin-bottom: 100px;
+}
+
+.imgtd{
+	width: 200px;
+}
+
+.hotel_img{
+	width: 200px;
+	height: 200px;
+	border-radius: 20px 0px 0px 20px;
+}
+
+.textbox{
+	width: 400px;
+	height: 200px;
+	border: 1px solid gray;
+	border-radius: 0px 20px 20px 0px;
+	text-align: left;
+}
+
+.textbox>p{
+	margin-left: 10px;
+	font-size: 14pt;
+}
