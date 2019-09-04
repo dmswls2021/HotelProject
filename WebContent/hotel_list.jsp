@@ -30,22 +30,29 @@
 %>
 		<table class="list">
 <%
-    	while(rs.next()){
+    		while(rs.next()){
 %>
-		<tr class="box">
-			<td class="imgtd">						
-				<img src="img/<%= rs.getString("img") %>" class="hotel_img">
-			</td>
-			<td>
-				<section class="textbox">
-					<p class="hname"><b><%= rs.getString("name") %></b></p>
-					<p><%= rs.getString("address") %></p>
-					<p><%= rs.getString("tel") %></p>
-				</section>
-			</td>
-		</tr>
+				<tr class="box">
+				<td class="bincan"></td>
+				<td class="imgtd">						
+					<img src="img/<%= rs.getString("img") %>" class="hotel_img">
+				</td>
+				<td>
+					<section class="textbox">
+						<p class="hname"><b><%= rs.getString("name") %></b></p>
+						<p><%= rs.getString("address") %></p>
+						<p><%= rs.getString("tel") %></p>
+					</section>
+				</td>
+				<% if(session.getAttribute("id") != null){ %>
+				<td>
+					<button class="buy_btn" onclick="<% application.setAttribute("name", rs.getString("name"));%>;location.href='buy.jsp'">예약하기</button>
+				</td>
+				<% } %>
+				<td class="bincan"></td>
+			</tr>
 <%
-		}
+			}
 %>
 		</table>
 <%
