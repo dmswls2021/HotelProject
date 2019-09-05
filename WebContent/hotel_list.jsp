@@ -28,6 +28,7 @@
 		pstmt = conn.prepareStatement(sql);
     	rs = pstmt.executeQuery();
 %>
+	<form action="buy.jsp" method="post">
 		<table class="list">
 <%
     		while(rs.next()){
@@ -46,7 +47,12 @@
 				</td>
 				<% if(session.getAttribute("id") != null){ %>
 				<td>
-					<button class="buy_btn" onclick="<% application.setAttribute("name", rs.getString("name"));%>;location.href='buy.jsp'">예약하기</button>
+					<% 
+						String name = rs.getString("name");
+					%>
+					<div class="buy_btn">
+						<a href="./buy.jsp?name=<%= name %>">예약하기</a>
+					</div>
 				</td>
 				<% } %>
 				<td class="bincan"></td>
@@ -55,6 +61,7 @@
 			}
 %>
 		</table>
+	</form>
 <%
  	}catch(Exception e){
     	e.printStackTrace();

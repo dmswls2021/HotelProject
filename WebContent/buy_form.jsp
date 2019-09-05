@@ -17,7 +17,6 @@
 	Connection conn=null; //DB연결
  	PreparedStatement pstmt=null; //SQL문
  	ResultSet rs = null;
- 	
  	String name = (String)application.getAttribute("name");
  	
  	try{
@@ -33,7 +32,7 @@
 		pstmt.setString(1, name);
     	rs = pstmt.executeQuery();
     	
-    	if(rs.next()) {
+    	if(rs.next()){
 %>
 	<div id="wrap">
         <br><br>
@@ -41,7 +40,7 @@
         <br><br><br>
         <!-- 입력한 값을 전송하기 위해 form 태그를 사용한다 -->
         <!-- 값(파라미터) 전송은 POST 방식, 전송할 페이지는 join_proc.jsp -->
-        <form method="post" action="buy_proc.jsp" name="userInfo" onsubmit="return check()">
+        <form method="post" action="buych.jsp" name="userInfo" onsubmit="return check()">
             <table>        
                 <tr>
                     <td id="title">날짜</td>

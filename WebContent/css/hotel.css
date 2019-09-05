@@ -12,8 +12,14 @@
 	width: 100px;
 	height: 50px;
 	border: 0;
-	color: white;
 	background-color: skyblue;
+	text-align: center;
+}
+
+.buy_btn>a{
+	color: white;
+	font-size: 13pt;
+	text-decoration: none;
 }
 
 .buy_btn:hover{
